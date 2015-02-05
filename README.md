@@ -22,7 +22,7 @@ The “deploy-to-vagrant” ant target provides a fast method to deploy the curr
 
 You must have a ssh host named “innomatic-vagrant” inside your SSH configuration file (e.g. ~/.ssh/config), e.g.:
 
-<code>
+<pre><code>
 Host innomatic-vagrant
   HostName 127.0.0.1
   User vagrant
@@ -33,7 +33,7 @@ Host innomatic-vagrant
   IdentityFile /Users/currentuser/.vagrant.d/insecure_private_key
   IdentitiesOnly yes
   LogLevel FATAL
-</code>
+</code></pre>
 
 You can get the exact configuration for your setup by running “vagrant ssh-config” from the console while in the Vagrantfile directory and renaming “default” host to “innomatic-vagrant”.
 
