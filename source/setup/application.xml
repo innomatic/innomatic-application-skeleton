@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<application>
+
+    <!-- Application meta data. -->
+	<definition>
+	    <!-- Application unique name. -->
+		<idname>vendor/innomatic-application-skeleton</idname>
+		<!-- Application release information. -->
+		<release>
+		    <!-- Current release version, e.g. semantic version number. -->
+			<version>1.4.0</version>
+			<!-- Current release date. -->
+			<date>2015/02/05</date>
+			<!--  Optional change log file name (in setup directory). -->
+			<changesfile>CHANGES</changesfile>
+		</release>
+		<!-- Application description information. -->
+		<description>Innomatic Platform application skeleton</description>
+		<category></category>
+		<!-- Optional application icon file name to be shown in Innomatic
+		     applications list (must be available in setup directory). 
+		 -->
+		<iconfile></iconfile>
+		<!-- Optional application dependencies to other applications. -->
+		<dependencies>
+            <dependency>innomatic[7.0.0]</dependency>
+		</dependencies>
+		<!-- Optional application options. -->
+		<options>
+			<!-- <option></option> -->
+		</options>
+		<!-- Optional legal information. -->
+		<legal>
+		    <!--  Application author. -->
+			<author>
+			    <!-- Company/author name. -->
+				<name>Innomatic</name>
+				<!-- Company/author email. -->
+				<email>info@innomatic.io</email>
+				<!-- Company/author web site. -->
+				<web>http://www.innomatic.io/</web>
+			</author>
+			<!-- Copyright note. -->
+			<copyright>Copyright (c) 2015 Innomatic</copyright>
+			<!-- License type. -->
+			<license>New BSD</license>
+			<!-- License file name (in setup directory). -->
+			<licensefile>LICENSE</licensefile>
+		</legal>
+		<!-- Optional support information. -->
+		<support>
+		    <!-- Email where to send support requests. -->
+			<supportemail>support@innomatic.io</supportemail>
+			<!-- Email where to send bug reports (used by Innomatic Debugger) -->
+			<bugsemail>bugs@innomatic.io</bugsemail>
+			<!-- Application release manager. -->
+			<maintainer>
+			    <!-- Maintainer name. -->
+				<name>Alex Pagnoni</name>
+				<!-- Maintainer email. -->
+				<email>alex.pagnoni@innomatic.io</email>
+			</maintainer>
+		</support>
+	</definition>
+	
+	<!-- Application components list. -->
+	<components>
+
+        <!-- Put here all your application components. -->
+
+	</components>
+</application>
