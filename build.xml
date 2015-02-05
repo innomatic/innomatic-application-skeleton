@@ -8,9 +8,15 @@
 -->
 <project name="Innomatic Platform application" default="package">
 
+	<!-- Set here your application name. -->
 	<property name="name" value="innomatic-application-skeleton" />
+	<!-- Set here your application current release version number. -->
 	<property name="version" value="1.0.0" />
+	<!-- Change this parameter if you have a different name in ~/.ssh/config
+	     for your Innomatic Vagrant machine in development environment. -->
+	<property name="vagrant-hostname" value="innomatic-vagrant" />
 
+	<!-- This target builds a source archive inside the build folder. -->
 	<target name="sources">
 		<tar destfile="${basedir}/build/${name}-src-${version}.tgz" compression="gzip">
 			<tarfileset dir="${basedir}/source" prefix="${name}-src-${version}">
@@ -20,6 +26,7 @@
 		</tar>
 	</target>
 
+	<!-- This target builds a distributable application archive inside the build folder. -->
 	<target name="package">
 		<tar destfile="${basedir}/build/${name}-${version}.tgz" compression="gzip">
 			<tarfileset dir="${basedir}/source" prefix="${name}-${version}">
@@ -36,6 +43,8 @@
 		</tar>
 	</target>
 
+	<!-- This target builds the application archive and deploy it
+	     to a local Innomatic Platform Vagrant installation. -->
 	<target name="deploy-to-vagrant" depends="package">
         <exec executable="scp">
             <arg value="${basedir}/build/${name}-${version}.tgz" />
@@ -43,7 +52,7 @@
         </exec>
 
         <exec executable="ssh">
-            <arg value="innomatic-vagrant" />
+            <arg value="${vagrant-hostname}" />
             <arg value="-C" />
             <arg value="php" />
             <arg value="/var/www/innomatic_legacy/innomatic/core/scripts/application.php" />
