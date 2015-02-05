@@ -2,7 +2,20 @@
 
 This is a project structure tree that you can use as the skeleton for your new Innomatic Platform application.
 
+This skeleton provides a basic project structure and a build system based on Apache Ant (tm).
+
 The source folder is the base directory for your Innomatic application.
+
+## How to use this skeleton
+
+To initialize your application development tree using this skeleton, you should:
+
+- download a copy of this project (e.g. using the GitHub “Download ZIP” button and not a git clone in order to use your own git repository);
+- remove (or customize) this README.md file;
+- edit the source/setup/application.xml file (especially the idname field and the release and components sections);
+- customize the CHANGES and LICENSE files in source/setup folder;
+- customize the name and version properties in build.xml file;
+- start application development inside the source folder.
 
 ## Building your application
 
@@ -12,7 +25,7 @@ The build file defines three targets:
 
 - package (default target): builds a distributable application archive inside the build folder.
 - source: builds a source archive inside the build folder.
-- deploy-to-vagrant: builds the application archive and deploy it to a local Innomatic Platform vagrant installation (see next chapter).
+- deploy-to-vagrant: builds the application archive and deploy it to a local Innomatic Platform Vagrant installation (see next chapter).
 
 ## Deploying to a Vagrant machine
 
@@ -39,5 +52,5 @@ You can get the exact configuration for your setup by running “vagrant ssh-con
 
 Since Innomatic Platform is a container (like an application server) you should do not include the platform source inside your project code, so it is likely you have a single Innomatic Platform Vagrant installation named “innomatic-vagrant” for all your Innomatic projects.
 
-You can change the ssh host name for your Innomatic Platform Vagrant machine, just remember to update the ant deploy-to-vagrant target parameters.
+You can change the ssh host name for your Innomatic Platform Vagrant machine (e.g. if you need multiple Innomatic installations in different Vagrant machines). In this case you must update the “vagrant-hostname” property in the build.xml file.
 
