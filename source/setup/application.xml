@@ -43,7 +43,7 @@
 			<!-- Copyright note. -->
 			<copyright>Copyright (c) 2015 Innomatic</copyright>
 			<!-- License type. -->
-			<license>New BSD</license>
+			<license>BSD-3-Clause</license>
 			<!-- License file name (in setup directory). -->
 			<licensefile>LICENSE</licensefile>
 		</legal>
