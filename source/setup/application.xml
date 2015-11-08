@@ -36,12 +36,12 @@
 			    <!-- Company/author name. -->
 				<name>Innomatic</name>
 				<!-- Company/author email. -->
-				<email>info@innomatic.io</email>
+				<email>info@innoteam.io</email>
 				<!-- Company/author web site. -->
 				<web>http://www.innomatic.io/</web>
 			</author>
 			<!-- Copyright note. -->
-			<copyright>Copyright (c) 2015 Innomatic</copyright>
+			<copyright>Copyright (c) 2015 Innoteam Srl</copyright>
 			<!-- License type. -->
 			<license>BSD-3-Clause</license>
 			<!-- License file name (in setup directory). -->
@@ -50,15 +50,15 @@
 		<!-- Optional support information. -->
 		<support>
 		    <!-- Email where to send support requests. -->
-			<supportemail>support@innomatic.io</supportemail>
+			<supportemail>support@innoteam.io</supportemail>
 			<!-- Email where to send bug reports (used by Innomatic Debugger) -->
-			<bugsemail>bugs@innomatic.io</bugsemail>
+			<bugsemail>support@innoteam.io</bugsemail>
 			<!-- Application release manager. -->
 			<maintainer>
 			    <!-- Maintainer name. -->
 				<name>Alex Pagnoni</name>
 				<!-- Maintainer email. -->
-				<email>alex.pagnoni@innomatic.io</email>
+				<email>alex.pagnoni@innoteam.io</email>
 			</maintainer>
 		</support>
 	</definition>

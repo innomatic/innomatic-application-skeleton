@@ -1,6 +1,6 @@
 # Innomatic Platform application skeleton
 
-This is a project structure tree that you can use as the skeleton for your new Innomatic Platform application.
+This is a project structure tree that you can use as the skeleton for your new Innomatic Platform application distributable package.
 
 This skeleton provides a basic project structure and a build system based on Apache Ant (tm).
 
