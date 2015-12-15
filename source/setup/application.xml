@@ -43,7 +43,7 @@
 			<!-- Copyright note. -->
 			<copyright>Copyright (c) 2015 Innoteam Srl</copyright>
 			<!-- License type. -->
-			<license>BSD-3-Clause</license>
+			<license>MIT</license>
 			<!-- License file name (in setup directory). -->
 			<licensefile>LICENSE</licensefile>
 		</legal>
